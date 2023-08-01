@@ -18,10 +18,12 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
     <>
       <Head>
         <title>{EnvVars.SITE_NAME}</title>
-        <meta
-          name="Gadegos Solutions Pvt. Ltd."
-          content="Simplify Indian Business Compliance with Us. Your Trusted Compliance Partner. Expert Solutions for Every Business. Navigating Regulations with Confidence. Unlock Growth, Stay Compliant."
-        />
+        <meta property="og:title" content="Gadegos Solutions pvt. ltd." />
+        <meta property="og:site_name" content="Gadegos Solutions"/>
+        <meta property="og:url" content="gadegos.in" />
+        <meta property="og:description" content="Simplify indian business compliance with us. your trusted partner. expert solutions htmlFor every business. navigating regulations confidence. unlock growth, stay compliant."/>
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://github.com/aadhib/gadegos-in/blob/7f1f1daeba121e17d563d6df0a7f563b2444deb1/public/metabanner.png" />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
