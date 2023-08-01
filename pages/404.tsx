@@ -20,6 +20,7 @@ export default function NotFoundPage() {
   );
 }
 
+
 const Wrapper = styled.div`
   background: rgb(var(--background));
   margin: 10rem 0;
