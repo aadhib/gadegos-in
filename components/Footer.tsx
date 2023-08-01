@@ -12,24 +12,6 @@ type SingleFooterList = { title: string; items: FooterListItems };
 type FooterItems = SingleFooterList[];
 
 const footerItems: FooterItems = [
-
-  {
-    title: ' ',
-    items: [
-      { title: '  ', href: '  ' },
-      { title: '  ', href: '  ' },
-    ],
-  },
-
-  {
-    title: 'Quick Links ',
-    items: [
-      { title: 'Contact', href: '/contact' },
-      { title: 'Services', href: '/features' },
-      { title: 'About Us', href: '/' },
-    ],
-  },
-
   {
     title: 'Info',
     items: [
