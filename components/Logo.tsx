@@ -1,6 +1,6 @@
 export default function Logo({ ...rest }) {
   return (
-    <svg id="Layer_2" data-name="Layer 2" width="170" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 943.26 265.19"  {...rest}>
+    <svg id="Layer_2" data-name="Layer 2" width="170" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1508.59 424.13"  {...rest}>
         <defs>
           <style dangerouslySetInnerHTML={{__html: "\n      .cls-1 {\n        fill: #043429;\n      }\n\n      .cls-2 {\n        fill: #fff;\n      }\n\n      .cls-3 {\n        fill: #0b4f3d;\n      }\n\n      .cls-4 {\n        fill: #1c725b;\n      }\n\n      .cls-5 {\n        fill: #606060;\n      }\n    " }} />
         </defs>
