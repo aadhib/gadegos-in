@@ -22,7 +22,7 @@ const IconWrapper = styled.div`
 
 const WhatsAppButton = () => {
   const phoneNumber = '+919745826915';
-  const message = 'Hello, How can we help you today?';
+  const message = 'Hello, What are the services you provide?';
   const apiLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 
   return (
