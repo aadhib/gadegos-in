@@ -15,12 +15,12 @@ const footerItems: FooterItems = [
   {
     title: 'Info',
     items: [
-      { title: 'Ernakulam, Kerala', href: 'https://goo.gl/maps/fJkRq56QkBE16SQZ9'},
+      { title: 'Ernakulam, Kerala', href: 'https://goo.gl/maps/fJkRq56QkBE16SQZ9' },
       { title: 'info@gadegos.in', href: 'mailto:info@gadegos.in' },
       { title: '+91 9745826915', href: 'tel:+919745826915' },
     ],
   },
-  
+
   {
     title: 'Policies',
     items: [
@@ -51,24 +51,29 @@ export default function Footer() {
         <BottomBar>
           <ShareBar>
             <NextLink href="https://www.instagram.com/we_gadegos_solutions" passHref >
-            <a target="_blank">
+              <a target="_blank">
                 <FaInstagram size={50} color='#fff' style={{ borderRadius: '50%', background: '#e95950', padding: '5px' }} />
               </a>
             </NextLink>
 
             <NextLink href="https://www.facebook.com/gadegossolutions/" passHref>
-            <a target="_blank">
+              <a target="_blank">
                 <FacebookIcon size={50} round={true} />
               </a>
             </NextLink>
 
             <NextLink href="https://www.linkedin.com/company/gadegos-solution" passHref>
-            <a target="_blank">
+              <a target="_blank">
                 <LinkedinIcon size={50} round={true} />
               </a>
             </NextLink>
           </ShareBar>
-          <Copyright>&copy; Copyright 2021 Gadegos Solutions</Copyright>
+          <Copyright>
+            &copy; Copyright 2024 Gadegos Solutions. Made by{' '}
+            <a href="https://www.multixion.com" target="_blank" rel="noopener noreferrer">
+              Multixion
+            </a>
+          </Copyright>
         </BottomBar>
       </Container>
     </FooterWrapper>
