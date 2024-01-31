@@ -70,7 +70,7 @@ export default function Footer() {
           </ShareBar>
           <Copyright>
             &copy; Copyright 2024 Gadegos Solutions. Made by{' '}
-            <a href="https://www.multixion.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.multixion.com" style="color"target="_blank" rel="noopener noreferrer">
               Multixion
             </a>
           </Copyright>
@@ -100,6 +100,7 @@ function ListItem({ title, href }: SingleFooterListItem) {
     </ListItemWrapper>
   );
 }
+
 
 const FooterWrapper = styled.div`
   padding-top: 10rem;
@@ -160,6 +161,10 @@ const ShareBar = styled.div`
 const Copyright = styled.p`
   font-size: 1.5rem;
   margin-top: 0.5rem;
+  a {
+    text-decoration: none;
+    color: #193dbf; /* Set the color to blue */
+  }
 `;
 
 const BottomBar = styled.div`
