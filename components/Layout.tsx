@@ -13,6 +13,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Paywall>
         <PaywallContent>
           <PaywallMessage>Payment Pending</PaywallMessage>
+          <PaywallSubMessage>
+            Please process the payment to activate your hosting. Your services will be restored promptly once the payment is completed. Thank you for your understanding and cooperation.
+          </PaywallSubMessage>
           <LinkWrapper href="https://multixion.com">Multixion</LinkWrapper>
         </PaywallContent>
       </Paywall>
@@ -65,6 +68,13 @@ const PaywallMessage = styled.p`
   font-size: 2rem;
   color: #ff6b6b;
   margin: 0;
+`;
+
+const PaywallSubMessage = styled.p`
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
 `;
 
 export default Layout;
