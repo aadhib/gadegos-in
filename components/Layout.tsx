@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <LayoutWrapper>
       {children}
       <WhatsAppButton />
-    </LayoutWrapper> <>
+    </LayoutWrapper> </>
   );
 };
 
