@@ -34,23 +34,6 @@ export default class MyDocument extends Document {
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
         </Head>
-        <style>
-          body{
-            filter: blur(10px) !important;
-          }
-
-          div.temporary{
-            display: flex;
-            font-size: 6rem;
-            text-transform: uppercase;
-            position: fixed;
-            z-index: 99999;
-            top: 50%;
-            left: 0;
-            justify-content: center;
-            width: 100vw;
-          }
-        </style>
         <body className="next-light-theme">
           <div className="temporary"><p>Payment Pending</p>
           <a href="https://multixion.com" style="color:blue;font-size:3rem;margin-right:10px;">Multixion</a>
