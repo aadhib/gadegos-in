@@ -70,7 +70,7 @@ export default function Footer() {
           </ShareBar>
           <Copyright>
             &copy; Copyright 2024 Gadegos Solutions. Made by{' '}
-            <a href="https://www.multixion.com" style="color"target="_blank" rel="noopener noreferrer">
+            <a href="https://www.multixion.com" target="_blank" rel="noopener noreferrer">
               Multixion
             </a>
           </Copyright>
