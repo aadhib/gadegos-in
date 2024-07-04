@@ -1,6 +1,7 @@
 // components/Layout.tsx
 import React, { ReactNode } from 'react';
 import WhatsAppButton from './WhatsAppButton';
+import styled from 'styled-components';
 
 type LayoutProps = {
   children: ReactNode;
