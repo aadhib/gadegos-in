@@ -31,11 +31,12 @@ const LinkWrapper = styled.a`
 const Paywall = styled.div`
   position: fixed;
   width: 100vw;
-  left: 0;
   top: 50%;
   font-size: 6rem;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  z-index:99999999;
 `
 
 export default Layout;
