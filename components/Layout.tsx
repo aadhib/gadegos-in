@@ -8,15 +8,15 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <LayoutWrapper>
-      <Paywall>
+  return (<>
+    <Paywall>
           <p>Payment Pending</p>
           <LinkWrapper href="https://multixion.com">Multixion</LinkWrapper>
       </Paywall>
+    <LayoutWrapper>
       {children}
       <WhatsAppButton />
-    </LayoutWrapper>
+    </LayoutWrapper> <>
   );
 };
 
