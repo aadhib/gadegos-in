@@ -12,11 +12,8 @@ import Hero from 'views/HomePage/Hero';
 // import Partners from 'views/HomePage/Partners';
 // import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 // import Testimonials from 'views/HomePage/Testimonials';
-import { useState } from 'react';
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const [isPaymentPending, setIsPaymentPending] = useState(true); // Set to true for demonstration
-
   return (
     <>
       <Head>
@@ -29,11 +26,6 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <meta property="og:image" content="https://github.com/aadhib/gadegos-in/blob/7f1f1daeba121e17d563d6df0a7f563b2444deb1/public/metabanner.png?raw=true" />
       </Head>
       <HomepageWrapper>
-        {isPaymentPending && (
-          <Overlay>
-            <OverlayText>PAYMENT PENDING</OverlayText>
-          </Overlay>
-        )}
         <WhiteBackgroundContainer>
           <Hero />
           {/* <Partners /> */}
@@ -99,25 +91,6 @@ const WhiteBackgroundContainer = styled.div`
   & > *:not(:first-child) {
     margin-top: 15rem;
   }
-`;
-
-const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); // Translucent black
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000; // Ensure it is above other content
-`;
-
-const OverlayText = styled.h1`
-  color: white;
-  font-size: 3rem;
-  text-align: center;
 `;
 
 export async function getStaticProps() {
